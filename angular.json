@@ -264,7 +264,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/mfe2",
             "index": "projects/mfe2/src/index.html",
@@ -312,7 +312,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "mfe2:build"
           },
@@ -329,7 +329,7 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "ngx-build-plus:karma",
           "options": {
             "main": "projects/mfe2/src/test.ts",
             "polyfills": "projects/mfe2/src/polyfills.ts",
