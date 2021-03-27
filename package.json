@@ -5,6 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:element": "npm run build -- --prod --output-hashing none --single-bundle true",
+    "build:element:mfe1": "npm run build:element -- --project mfe1",
+    "build:element:mfe2": "npm run build:element -- --project mfe2",
+    "build:element:mfe3": "npm run build:element -- --project mfe3",
+    "build:elements": "run-p build:element:**",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
