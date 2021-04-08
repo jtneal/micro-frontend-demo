@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Example1Component } from './example1/example1.component';
 import { Example2Component } from './example2/example2.component';
 import { Example3Component } from './example3/example3.component';
+import { Mfe1Module } from './mfe1/mfe1.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Example3Component } from './example3/example3.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Mfe1Module
   ],
   providers: [],
   bootstrap: [AppComponent]
